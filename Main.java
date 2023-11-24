@@ -9,7 +9,11 @@ public class Main {
     }
 
     private static double[] notaProm(double[][] calificacionesE) {
-        return new double[0];
+        double[] promedio = new double[calificacionesE.length];
+        for(int i = 0; i < calificacionesE.length; i++){
+            double suma = 0;
+        }
+        return promedio;
     }
 
     private static void mostrarP(double[] promedioE) {
