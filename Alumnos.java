@@ -1,11 +1,11 @@
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-    double[][] calificacionesE = new double[10][5];
-    leerNotas(calificacionesE);
-    double [] promedioE = notaProm(calificacionesE);
-    mostrarP(promedioE);
-    verSuple(promedioE);
+public class Alumnos {
+    public static void alumnos(String[] args) {
+        double[][] calificacionesE = new double[10][5];
+        leerNotas(calificacionesE);
+        double [] promedioE = notaProm(calificacionesE);
+        mostrarP(promedioE);
+        verSuple(promedioE);
     }
     private static double[] notaProm(double[][] calificacionesE) {
         return new double[0];
