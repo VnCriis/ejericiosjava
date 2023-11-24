@@ -18,4 +18,12 @@ public class Alumnos {
     private static void leerNotas(double[][] calificacionesE) {
         Scanner scanner = new Scanner(System.in);
     }
+    Scanner scanner = new Scanner(System.in);
+        for (int i =0; i < calificacionesE.length; i++){
+        System.out.println("Ingrese las calificaciones del estudiante " + ( i + 1) + ":");
+        for (int j = 0; j < calificacionesE[i].length; j++){
+            System.out.print("Ingrese la calificacion de la materia " + (j + 1) + ": ");
+            calificacionesE[i][j] = scanner.nextDouble();
+        }
+    }
 }
