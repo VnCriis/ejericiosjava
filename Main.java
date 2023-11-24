@@ -12,6 +12,10 @@ public class Main {
         double[] promedio = new double[calificacionesE.length];
         for(int i = 0; i < calificacionesE.length; i++){
             double suma = 0;
+            for(int j = 0; j < calificacionesE[i].length; j ++);{
+                int j = 0;
+                suma += calificacionesE[i][j];
+            }
         }
         return promedio;
     }
