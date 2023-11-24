@@ -26,17 +26,24 @@ public class Main {
         }
     }
     private static void verSuple(double[] promedioE) {
-    }
-    private static void leerNotas(double[][] calificacionesE) {
-
         Scanner scanner = new Scanner(System.in);
-        scanner = new Scanner(System.in);
-        for (int i = 0; i < calificacionesE.length; i++) {
-            System.out.println("Ingrese las calificaciones del estudiante " + (i + 1) + ":");
-            for (int j = 0; j < calificacionesE[i].length; j++) {
-                System.out.print("Ingrese la calificacion de la materia " + (j + 1) + ": ");
-                calificacionesE[i][j] = scanner.nextDouble();
-            }
+        System.out.println("Ingrese s")
+
+    }
+    private static void leerNotas(double[][] promedioE) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\nIngrese su numero de estudiante para verificar si se quedo a supletorio:");
+        int numeroEstudiante = scanner.nextInt();
+
+        if (numeroEstudiante > 0 && numeroEstudiante <= promedioE.length) {
+            double[] promedioEstudiante = promedioE[numeroEstudiante - 1];
+            System.out.println("El promedio del estudiante " + numeroEstudiante + " es: " + promedioEstudiante);
+
+            System.out.println("Ni modo anda alistandote para el suple");
+        } else {
+            System.out.println("Número de estudiante no válido");
         }
+    }
     }
 }
