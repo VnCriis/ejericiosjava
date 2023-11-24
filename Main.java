@@ -19,13 +19,14 @@ public class Main {
         }
         return promedio;
     }
-
     private static void mostrarP(double[] promedioE) {
+        System.out.println("Promedio de cada estudiante: ");
+        for (int i = 0; i < promedioE.length; i++){
+            System.out.println("Estudiante " + (i + 1) + ": " + promedioE[i]);
+        }
     }
-
     private static void verSuple(double[] promedioE) {
     }
-
     private static void leerNotas(double[][] calificacionesE) {
 
         Scanner scanner = new Scanner(System.in);
